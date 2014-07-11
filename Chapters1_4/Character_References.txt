@@ -1,0 +1,26 @@
+Character References - refer to characters not SGML entities
+
+Character: <
+Named: &lt;
+Decimal: &#60;
+Hexadecimal: &#x3c
+
+Character: >
+Named: &gt;
+Decimal: &#62;
+Hexadecimal: &#x3c;
+
+Chracter: &
+Named: &amp;
+Decimal: &#38;
+Hexadecimal: &#x26;
+
+Character: "
+Named: &quot;
+Decimal: &#34;
+Hexadecimal: &#x22;
+
+Character: '
+Named: &apos;
+Decimal: &#39;
+Hexadecimal: &#x27;
