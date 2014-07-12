@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- text.html by Bill Weinman http://bw.org/contact/ -->
+<!-- Either of these techniques can interrupt text to speech applications-->
 
 <html lang='en'>
 <head>
@@ -14,14 +14,16 @@
     HTML Text
 </h1>
 <p>
+<!-- Soft hypens wrap long words when the browser is resized -->
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-    porta nunc. Aliquam quis nulla turpis. Nam tincidunt nunc hendrerit
+    porta nunc. Aliqua&shy;mquisnulla&shy;turpis. Nam tincidunt nunc hendrerit
     ligula aliquet vel feugiat diam pharetra.
 </p>
 
 <p>
+<!-- word breaks without the hypens (breaking words in intelligent places) -->
     Aliquam posuere nulla quis enim sodales congue. Vivamus tortor mauris,
-    feugiat semper vehicula non, blandit sed mi. Proin sed urna eu nunc
+    feugiat semper<wbr />vehiculanon<wbr />blandit sed mi. Proin sed urna eu nunc
     convallis aliquam.
 </p>
 
