@@ -14,16 +14,51 @@ styles for that element -->
     </title>
     <link rel="stylesheet" type="text/css" href="main.css">
     
-	<!-- applied to the entire file -->
-    <style> 
-    	p {
-		/* Later style elements override previous style changes*/
+    <style>
+		
+		/* Class Changes */
+    	.foo { 			
+    		font-family: sans-serif;
+			font-size: 14pt;
     		line-height: 140%;
     	}
     	
-    	a { 
-    		font-family: sans-serif;
+    	p.foo {
+			font-family: monospace;
+			font-size: 16pt;
+    		line-height: 140%;
     	}
+    	
+		/*ID can only be used once */
+    	#p1 { 
+    		font-family: monospace;
+			font-size: 16pt;
+    		line-height: 140%;
+    	}
+
+		/* Only applies to <a> tags within <p> tags */
+    	p a {     		
+    		font-family: sans-serif;
+    		font-size: 16pt;
+    		line-height: 140%;
+    	
+    	}
+		
+		/* Only applies to <a> tags within <p> tags if it's a direct decendent */
+    	p > a {     		
+    		font-family: sans-serif;
+    		font-size: 16pt;
+    		line-height: 140%;
+    	
+    	}
+
+    	a:hover { /* Sudo Selector */
+    		font-family: sans-serif;
+    		font-size: 30pt;
+    		line-height: 140%;
+    	
+    	}
+    	
     </style>
 </head>
 <body>
@@ -32,6 +67,7 @@ styles for that element -->
 <h1>
     Style Sheets
 </h1>
+
 <p style="font-family: monospace;">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Pellentesque sit amet lorem ligula. Nam pulvinar nunc ac magna
@@ -48,7 +84,8 @@ styles for that element -->
     ipsum blandit sed laoreet odio pharetra.
 </p>
 </div>
-<p>
+
+<p class="foo">
     Sed tincidunt, tellus et ultricies lacinia, ipsum magna laoreet
     velit, iaculis mattis quam ante vitae tellus. Aliquam lacinia, lacus
     vel gravida tristique, massa velit suscipit mauris, non sagittis
@@ -64,7 +101,7 @@ styles for that element -->
     pharetra libero, id lobortis velit faucibus a. Duis at fringilla
     ipsum.
 </p>
-<p>
+<p class="p1">
     Pellentesque habitant morbi tristique senectus et netus et malesuada
     fames ac turpis egestas. Vivamus laoreet placerat ipsum ac congue.
     In hac habitasse platea dictumst. Sed molestie ullamcorper diam

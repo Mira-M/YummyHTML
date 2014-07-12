@@ -1,0 +1,9 @@
+% - Relative percentages - 100% relative to its container
+pt - points, there are are 72 points in an inch
+pc - pica - 12 points in 1 pica
+em - setting of the current font -- 1 em is 12pt, if the font is set to 12pt, 2 em is 24
+ex - half the size of an em 
+in - imperial inch size. relative size, depends on the graphics enviornment
+cm - centermeters
+mm - millimeter
+px - pixels - are usually 1:1, but in retina screen pixels are 2:1
