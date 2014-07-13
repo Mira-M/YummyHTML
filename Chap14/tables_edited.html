@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- tables.html by Bill Weinman http://bw.org/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Tables
+    </title>
+    
+    <style>
+/* 
+    	table, td, th {
+    		border: 1px solid black;
+    	}
+ */
+    	table { 
+    	border-collapse: collapse; 
+    	font-family: tahoma, sans-serif;
+    	
+    	} 
+    	tr.even { background-color: #ddf; }
+    	tr.odd { background-color: #def; }
+    	th { background-color: #cef; }
+    	td { padding : 3pt; }
+    	caption { caption-side: bottom}
+    	
+    </style>
+</head>
+<body>
+
+<h1>
+    HTML Tables
+</h1>
+
+<table>
+<!-- Caption must appear before the rows -->
+    <caption>
+        Some Favorite Albums
+    </caption>
+
+<!-- Tables - th (header), tr (row), td (data, or content of cells) -->
+    <tr class="odd">
+        <th> Title </th>
+        <th> Artist </th>
+        <th> Comment </th>
+    </tr>
+
+    <tr class="even">
+        <td> Electric Ladyland </td>
+        <td> Jimi Hendrix </td>
+        <td> Revolutionary </td>
+    </tr>
+
+    <tr class="odd">
+        <td> Revolver </td>
+        <td> The Beatles </td>
+        <td> Their best work. </td>
+    </tr>
+
+    <tr class="even">
+        <td> Apostrophe </td>
+        <td> Frank Zappa </td>
+        <td> Brilliant mix of rock and jazz. </td>
+    </tr>
+
+    <tr class="odd">
+        <td> Birds of Fire </td>
+        <td> Mahavishnu Orchestra </td>
+        <td> The ultimate fusion album. </td>
+    </tr>
+</table>
+
+</body>
+</html>
