@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- lists.html by Bill Weinman http://bw.org/contact/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Lists
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    	<style>
+    		dl, dt, dd, ol, ul, li {
+    			margin: 0;
+    			padding: 0;
+    			border: 0;
+    			margin-left: 1ex;
+    		
+    		}
+/* Used to show that the bullets are placed outside of the border by default
+so list's border is set to 0, they disappear */
+    		#outer {
+    			margin-left: 50px;
+    			border:1px solid black;
+    		}
+/* Places the numbering inside of the border, two possible parameters 
+inside or outside */
+    		ol, ul {list-style-position: inside;}
+    		.ordered {list-style-type: katakana;}
+    		.unordered {list-style-image: url(images/scissors-small.png);}
+    	</style>
+</head>
+<body>
+
+<h1>
+    HTML Lists
+</h1>
+
+<div id="outer">
+<ol class="ordered">
+    <li> One </li>
+    <li> Two </li>
+		<ol type="i" start="5">
+    		<li> One </li>
+    		<li> Two </li>
+   			<li> Three </li>
+		</ol>
+    <li> Three </li>
+</ol>
+
+<ul class="unordered">
+    <li> Four </li>
+    <li> Five </li>
+    <li> Six </li>
+</ul>
+
+<dl>
+    <dt> One </dt>
+    <dd> The first non-zero number. </dd>
+
+    <dt> Two </dt>
+    <dd> The number after one. </dd>
+
+    <dt> Three </dt>
+    <dd> To get ready. </dd>
+
+    <dt> Four </dt>
+    <dd> Now Go, Cat, Go! </dd>
+</dl>
+
+</div>
+
+</body>
+</html>
