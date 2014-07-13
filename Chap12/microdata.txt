@@ -1,0 +1,14 @@
+Microdata 
+
+Not supported natively in browsers
+
+Used by google primarily to aid in searching
+
+schema.org/Thing
+
+As a part of Google's Webmaster's testing tools google has 
+Rich Snippets Testing Tool available for developers to test their 
+structured data markup. 
+
+www.google.com/webmasters/tools/richsnippets
+
