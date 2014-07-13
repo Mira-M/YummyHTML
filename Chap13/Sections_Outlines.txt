@@ -1,0 +1,11 @@
+Tools:
+https://developer.mozilla.org/en/Sections_and_Outlines_of_an_HTML5_document
+
+Provides information regarding the structure of HTML5 documents.
+
+Tools to extract outline from pages:
+
+http://code.google.com/p/h5o/
+	Including a Chrome Extension
+
+http://gsnedders.html5l.org/outliner/
