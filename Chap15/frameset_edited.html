@@ -1,0 +1,25 @@
+<!-- Frameset - legacy, not supported by HTML-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" /> 
+    <title>
+        HTML Frameset Example
+    </title>
+</head>
+
+<!-- 
+"*" means whatever's left ~~ right means taking 75% of the window, flexs with movement
+of window
+ -->
+
+
+<!-- "frameborder removes the horizontal and vertical borders -->
+<frameset cols="*, 75%" frameborder="0">
+    <frame src="frames/f1.html" />
+    <frameset rows="100, *" frameborder="0">
+        <frame src="frames/f2.html" />
+        <frame src="frames/f3.html" />
+    </frameset>
+</frameset>
+</html>
