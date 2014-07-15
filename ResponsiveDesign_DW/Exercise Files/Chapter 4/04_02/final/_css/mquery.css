@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Phone Portrait */
+@import url("phone-portrait.css") only screen and (max-width:320px);
+/* Phone */
+@import url("phone.css") only screen and (min-width:321px) and (max-width:480px);
+/* Tablet */
+@import url("tablet.css") only screen and (min-width:481px);
+/* Desktop */
+@import url("desktop.css") only screen and (min-width:769px);
+

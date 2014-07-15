@@ -1,0 +1,14 @@
+  <script>
+    // for testing purposes clear local storage each time to remove cached network speed tests
+    try {
+      localStorage.removeItem("fsjs");
+    } catch( e ) { }
+    // for performance run speed test before dom is ready.
+    $.hisrc.speedTest();
+    $(document).ready(function(){
+      $(".hisrc img").hisrc({
+        useTransparentGif: true,
+        transparentGifSrc: '_images/spacer.gif' // use for IE
+      });
+    });
+  </script>
